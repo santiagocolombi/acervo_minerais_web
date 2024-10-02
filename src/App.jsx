@@ -6,6 +6,7 @@ import Lista from './assets/Lista'
 function App() {
 
   return ( 
+    <div>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Login/>}/>
@@ -13,7 +14,11 @@ function App() {
       <Route path='*' element={<h1>Not Found</h1>}/> 
     </Routes>
     </BrowserRouter>
+    
+    
+    </div>
 
+    
   )
 }
 
