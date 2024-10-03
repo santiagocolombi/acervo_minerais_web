@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
 import Login from './assets/Login'
 import Lista from './assets/Lista'
 
 function App() {
 
   return ( 
-    <div>
+    <div class ='h-screen w-screen flex justify-center items-center text-center'>
+      
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Login/>}/>
-      <Route path='/Produto' element={<Lista/>}/>
+      <Route path='/Lista' element={<Lista/>}/>
       <Route path='*' element={<h1>Not Found</h1>}/> 
     </Routes>
     </BrowserRouter>

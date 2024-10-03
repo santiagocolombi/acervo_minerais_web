@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Lista() {
     return <div>
         
-        <Link to = {'/'}>Voltar</Link>
+        <Link to = {'/'} >Voltar</Link>
         
     </div>;
 }
