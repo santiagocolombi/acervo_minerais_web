@@ -1,10 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Form from './Form';
 function Lista() {
-    return <div class='max-w-screen-lg'>
-        <h1 class='pb-10'>Contato</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus animi et unde in saepe consequatur reprehenderit voluptatum corporis id reiciendis optio culpa accusantium quia adipisci, eum libero aliquid harum nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam aut laborum quas laudantium fugit quae quam rerum molestiae blanditiis? Earum, sint libero aspernatur impedit quisquam at voluptatem similique quidem.</p>
-        <Link to = {'/'} >Voltar</Link>
+    
+    return <div class='max-w-screen-lg'>  
+        <h1 className='pb-10  font-medium text-2xl'>Contato</h1>
+    <section className='flex justify-center'>
+
+        <div className='flex-col'>
+     <Link className='flex'>E-mail</Link>
+     <Link className='flex'>Facebook</Link>
+     <Link className='flex'>X</Link>
+     <Link className='flex'>Intagram</Link>
+
+        </div>
+        </section>
+        <form>
+         <Form/>
+        </form>
+
+        <Link to = {'/'} class='hover:text-sky-700 hover:underline'>Voltar</Link>
         
     </div>;
 }
