@@ -20,6 +20,7 @@ import Ino  from './assets/Classes/Subclasses/Ino'
 import Neso from './assets/Classes/Subclasses/Neso'
 import Soro from './assets/Classes/Subclasses/Soro'
 import Tecto from './assets/Classes/Subclasses/Tecto'
+import Mineral from './Minerais/Mineral'
 
 
 
@@ -54,6 +55,8 @@ function App() {
       <Route path='/Neso' element={<Neso/>}/>
       <Route path='/Soro' element={<Soro/>}/>
       <Route path='/Tecto' element={<Tecto/>}/>
+      
+      <Route path='/mineral/:name' element={<Mineral/>}/>
       
       <Route path='*' element={<h1>Not Found</h1>}/> 
 
